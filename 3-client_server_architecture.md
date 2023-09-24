@@ -212,26 +212,24 @@ JSON формат обмена данными	| XML язык разметки (�
 
 ## XML
 ```
-<employees>
-	<employees>
-		<firstName>John</firstName> <lastName>Doe</lastName>
-	</employees>
-	<employees>
-		<firstName>Anna</firstName> <lastName>Smith</lastName>
-	</employees>
-	<employees>
-		<firstName>Peter</firstName> <lastName>Jones</lastName>
-	</employees>
-<employees>
+<xml>
+	<my_favorite_movie>"Скотт пилигрим против всех"</favorite_movie>
+    <my_favorite_series>"Очень странные дела"</favorite_series>
+    <my_favorite_food>"Пицца"</favorite_food>
+	<my_favorite_season>"Весна"</favorite_season>
+	<country_you_would_like_to_visit>"Италия"</country_you_would_like_to_visit>
+</xml>
 ```
 
 ## JSON
 ```
-{“employees”: [
-	{“firstName”: “John”, “lastName”: “Doe”},
-    {“firstName”: “Anna”, “lastName”: “Smith”},
-    {“firstName”: “Peter”, “lastName”: “Jones”},
-]}
+{
+	"my_favorite_movie":"Скотт пилигрим против всех",
+	"my_favorite_series":"Очень странные дела",
+	"my_favorite_food":"Пицца",
+	"my_favorite_season":"Весна",
+	"country_you_would_like_to_visit":"Италия"
+}
 ```
 
 __XML состоит из:__ Открывающий и закрывающий тег, имя элемента, атрибуты и контент. __Правила написания XML:__ только один корневой элемент, элементы имеют закрывающий тег, названия регистрозависимые, элементы не должны пересекаться, значения атрибутов в кавычках, нельзя использовать в текстовых блоках (<, >, &, ”, '). Объявление XML – первая строка.
